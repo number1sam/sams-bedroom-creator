@@ -1,0 +1,274 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  background: linear-gradient(135deg, #87CEEB 0%, #4682B4 100%);
+  min-height: 100vh;
+}
+
+.bedroom-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  color: #2c3e50;
+}
+
+.bedroom-header {
+  text-align: center;
+  margin-bottom: 30px;
+  background: linear-gradient(45deg, #ff6b6b, #4ecdc4);
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.bedroom-header h1 {
+  color: white;
+  font-size: 2.5rem;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+  margin-bottom: 15px;
+}
+
+.create-button {
+  background: linear-gradient(45deg, #ff6b6b, #feca57);
+  color: white;
+  border: none;
+  padding: 15px 30px;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+}
+
+.create-button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.3);
+  background: linear-gradient(45deg, #ff5252, #ffc107);
+}
+
+.bedroom-layout {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.room-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 20px;
+  background: #f8f9fa;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.bed-area, .desk-area, .play-area, .sports-corner {
+  background: white;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.bed {
+  width: 100px;
+  height: 60px;
+  background: #8B4513;
+  margin: 0 auto 10px;
+  border-radius: 5px;
+  position: relative;
+}
+
+.pillow {
+  width: 20px;
+  height: 15px;
+  background: #FFB6C1;
+  position: absolute;
+  top: -5px;
+  left: 10px;
+  border-radius: 3px;
+}
+
+.blanket {
+  width: 80px;
+  height: 40px;
+  background: linear-gradient(45deg, #1E90FF, #00CED1);
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  border-radius: 3px;
+}
+
+.desk {
+  width: 80px;
+  height: 50px;
+  background: #D2B48C;
+  margin: 0 auto 10px;
+  border-radius: 5px;
+  position: relative;
+}
+
+.computer {
+  width: 25px;
+  height: 20px;
+  background: #2c3e50;
+  position: absolute;
+  top: 5px;
+  left: 10px;
+  border-radius: 2px;
+}
+
+.books {
+  width: 30px;
+  height: 25px;
+  background: linear-gradient(to right, #e74c3c, #f39c12, #27ae60);
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  border-radius: 2px;
+}
+
+.toy-chest {
+  width: 80px;
+  height: 40px;
+  background: #8B4513;
+  margin: 0 auto 10px;
+  border-radius: 5px;
+  position: relative;
+}
+
+.lego-box {
+  width: 20px;
+  height: 15px;
+  background: #e74c3c;
+  position: absolute;
+  top: 5px;
+  left: 10px;
+  border-radius: 2px;
+}
+
+.action-figures {
+  width: 25px;
+  height: 20px;
+  background: linear-gradient(45deg, #3498db, #e74c3c, #f1c40f);
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  border-radius: 2px;
+}
+
+.sports-corner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+}
+
+.basketball, .soccer-ball {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin: 2px;
+}
+
+.basketball {
+  background: #ff8c00;
+  background-image: radial-gradient(circle at 30% 30%, #ffa500, #ff8c00);
+}
+
+.soccer-ball {
+  background: #000;
+  background-image: radial-gradient(circle at 50% 50%, #fff 30%, #000 30%);
+}
+
+.trophy {
+  width: 25px;
+  height: 35px;
+  background: linear-gradient(to top, #ffd700, #ffed4e);
+  margin: 0 auto;
+  border-radius: 3px 3px 0 0;
+  position: relative;
+}
+
+.trophy::before {
+  content: '🏆';
+  position: absolute;
+  top: -5px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 20px;
+}
+
+.wall-decorations {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.poster {
+  background: white;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.1rem;
+  border: 3px solid;
+}
+
+.poster1 {
+  border-color: #9b59b6;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+}
+
+.poster2 {
+  border-color: #27ae60;
+  background: linear-gradient(135deg, #56ab2f 0%, #a8e6cf 100%);
+  color: #2c3e50;
+}
+
+.poster3 {
+  border-color: #e74c3c;
+  background: linear-gradient(135deg, #ff6b6b 0%, #feca57 100%);
+  color: white;
+}
+
+.item-label {
+  font-size: 0.9rem;
+  color: #7f8c8d;
+  margin-top: 10px;
+  font-style: italic;
+}
+
+.bedroom-footer {
+  text-align: center;
+  background: #34495e;
+  color: white;
+  padding: 15px;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+  .bedroom-layout {
+    grid-template-columns: 1fr;
+  }
+  
+  .room-section {
+    grid-template-columns: 1fr;
+  }
+  
+  .bedroom-header h1 {
+    font-size: 2rem;
+  }
+}
